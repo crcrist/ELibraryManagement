@@ -13,7 +13,7 @@
                      <center>
                      <h2>Our Features</h2>
                      <p><b>Our 3 Primary Features -</b></p>
-                     <center>
+                     </center>
                  </div>
              </div>
 
@@ -72,7 +72,7 @@
                  <center>
                  <h2>Our Process</h2>
                  <p><b>We have a simple 3 step process-</b></p>
-                 <center>
+                 </center>
              </div>
          </div>
 
