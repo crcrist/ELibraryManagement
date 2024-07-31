@@ -67,7 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminauthormanagement.aspx" />
+    <Content Include="adminbookissuing.aspx" />
     <Content Include="adminlogin.aspx" />
+    <Content Include="adminpublishermanagemenet.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="css\customstylesheet.css" />
@@ -2181,17 +2184,39 @@
     <Content Include="imgs\imgs\sign-up.png" />
     <Content Include="imgs\imgs\writer.png" />
     <Content Include="userlogin.aspx" />
+    <Content Include="userprofile.aspx" />
     <Content Include="usersignup.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminauthormanagement.aspx.cs">
+      <DependentUpon>adminauthormanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminauthormanagement.aspx.designer.cs">
+      <DependentUpon>adminauthormanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminbookissuing.aspx.cs">
+      <DependentUpon>adminbookissuing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminbookissuing.aspx.designer.cs">
+      <DependentUpon>adminbookissuing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminlogin.aspx.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminpublishermanagemenet.aspx.cs">
+      <DependentUpon>adminpublishermanagemenet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminpublishermanagemenet.aspx.designer.cs">
+      <DependentUpon>adminpublishermanagemenet.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
@@ -2214,6 +2239,13 @@
     </Compile>
     <Compile Include="userlogin.aspx.designer.cs">
       <DependentUpon>userlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userprofile.aspx.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userprofile.aspx.designer.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
     </Compile>
     <Compile Include="usersignup.aspx.cs">
       <DependentUpon>usersignup.aspx</DependentUpon>
