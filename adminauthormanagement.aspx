@@ -66,19 +66,25 @@
 
                         <div class="row">
                             <div class="col-4">
+                                <div class="d-grid gap-2">
                                 <asp:Button class="btn btn-lg btn-block btn-success"
                                     ID="Button2"
                                     runat="server" Text="Add" />
                             </div>
+                                </div>
                             <div class="col-4">
+                                <div class="d-grid gap-2">
                                 <asp:Button class="btn btn-lg btn-block btn-warning"
                                     ID="Button1"
                                     runat="server" Text="Update" />
                             </div>
+                                </div>
                             <div class="col-4">
+                                <div class="d-grid gap-2">
                                 <asp:Button class="btn btn-lg btn-block btn-danger"
                                     ID="Button4"
                                     runat="server" Text="Delete" />
+                                    </div>
                             </div>
                         </div>
 
