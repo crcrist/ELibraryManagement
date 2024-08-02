@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -23,14 +24,64 @@ namespace ELibraryManagement
         // sign up button click event
         protected void Button1_Click(object sender, EventArgs e)
         {
-            
+            if (checkMemberExists())
+            {
+                Response.Write("<script>alert('Member already exists with this member ID, try another ID');</script>");
+            }
 
-            try {
+            else
+            {
+                signUpNewUser();
+            }
+
+        } 
+
+        // user defined method
+
+        bool checkMemberExists()
+        {
+            try
+            {
                 SqlConnection con = new SqlConnection(strcon);
                 if (con.State == System.Data.ConnectionState.Closed)
                 {
                     con.Open();
-                    
+
+                }
+
+                SqlCommand cmd = new SqlCommand("SELECT * FROM member_master_tbl " +
+                    "WHERE member_id='"+TextBox8.Text.Trim()+"';", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count >= 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+                            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+                return false;
+            }
+            
+        }
+
+
+        void signUpNewUser()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == System.Data.ConnectionState.Closed)
+                {
+                    con.Open();
+
                 }
 
                 SqlCommand cmd = new SqlCommand(
@@ -57,10 +108,10 @@ namespace ELibraryManagement
                 con.Close();
                 Response.Write("<script>alert('Sign Up Successful. Go to User Login to Login');</script>");
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
-        } 
+        }
     }
 }
