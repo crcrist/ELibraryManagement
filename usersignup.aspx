@@ -206,7 +206,7 @@
                             <div class="d-grid gap-2">
                                 <asp:Button class="btn btn-block btn-light btn-lg"
                                     ID="Button1" 
-                                    runat="server" Text="Sign Up"/>
+                                    runat="server" Text="Sign Up" OnClick="Button1_Click"/>
                             </div>
 
 
