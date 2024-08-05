@@ -51,18 +51,15 @@
                                 <div class="d-grid gap-2">
                                     <asp:Button class="btn btn-block btn-light btn-lg"
                                         ID="Button1" 
-                                        runat="server" Text="Login"/>
+                                        runat="server" Text="Login" OnClick="Button1_Click"/>
                                 </div>
 
 
-                                <a href="usersignup.aspx">
-                                <div class="d-grid gap-2">
-                                    
-                                        <input class="btn btn-block btn-light btn-lg"
-                                        id="Button2" 
-                                        type="button" value="Sign Up"/>
-                                </div> 
-                                </a>
+                                                                <div class="d-grid gap-2">
+                                    <asp:Button class="btn btn-block btn-light btn-lg"
+                                        ID="Button2" 
+                                        runat="server" Text="Signup" OnClick="Button2_Click"/>
+                                </div>
 
                             </div>
                         </div>
