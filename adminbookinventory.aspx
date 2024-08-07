@@ -38,7 +38,7 @@
                         <div class="form-group">
                            <div class="input-group">
                               <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Member ID"></asp:TextBox>
-                              <asp:LinkButton class="btn btn-primary" ID="LinkButton4" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                              <asp:LinkButton class="btn btn-primary" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
                            </div>
                         </div>
                      </div>
@@ -168,19 +168,19 @@
                   <div class="row">
                      <div class="col-4">
                          <div class="d-grid gap-2">
-                        <asp:Button ID="Button1" class="btn btn-lg btn-block btn-success" runat="server" Text="Add" />
+                        <asp:Button ID="Button1" class="btn btn-lg btn-block btn-success" runat="server" Text="Add" OnClick="Button1_Click" />
                      
                          </div>
 
                      </div>
                      <div class="col-4">
                          <div class="d-grid gap-2">
-                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" />
+                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" OnClick="Button3_Click" />
                     </div>
                              </div>
                      <div class="col-4">
                          <div class="d-grid gap-2">
-                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" />
+                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" OnClick="Button2_Click" />
                      </div>
                          </div>
                   </div>
@@ -206,6 +206,7 @@
                   </div>
                   <div class="row">
                      <div class="col">
+                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elibraryDBConnectionStringBookInv %>" ProviderName="<%$ ConnectionStrings:elibraryDBConnectionStringBookInv.ProviderName %>" SelectCommand="SELECT * FROM [admin_login_tbl]"></asp:SqlDataSource>
                         <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
                      </div>
                   </div>
