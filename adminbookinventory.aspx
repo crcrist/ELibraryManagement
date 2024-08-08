@@ -1,5 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="adminbookinventory.aspx.cs" Inherits="ELibraryManagement.adminbookinventory" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                //setting pource to whatever we pass as input
+                reader.onload = function (e) {
+                    $('#imgview').attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        </script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -18,7 +32,7 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                           <img width="100px" src="imgs/imgs/books.png" />
+                           <img id="imgview" Height="150px" width="100px" src="book_inventory/books1.png" />
                         </center>
                      </div>
                   </div>
@@ -29,7 +43,8 @@
                   </div>
                   <div class="row">
                      <div class="col">
-                        <asp:FileUpload class="form-control" ID="FileUpload1" runat="server" />
+                        <asp:FileUpload onchange="readURL(this);" 
+                            class="form-control" ID="FileUpload1" runat="server" />
                      </div>
                   </div>
                   <div class="row">

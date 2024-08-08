@@ -2164,15 +2164,15 @@
     <Content Include="fontawesome\svgs\solid\yin-yang.svg" />
     <Content Include="fontawesome\svgs\solid\z.svg" />
     <Content Include="homepage.aspx" />
-    <Content Include="imgs\books\b1.jpg" />
-    <Content Include="imgs\books\b2.jpg" />
-    <Content Include="imgs\books\b3.jpg" />
-    <Content Include="imgs\books\b4.jpg" />
-    <Content Include="imgs\books\b5.jpg" />
+    <Content Include="book_inventory\b1.jpg" />
+    <Content Include="book_inventory\b2.jpg" />
+    <Content Include="book_inventory\b3.jpg" />
+    <Content Include="book_inventory\b4.jpg" />
+    <Content Include="book_inventory\b5.jpg" />
     <Content Include="imgs\imgs\adminuser.png" />
     <Content Include="imgs\imgs\book-online.png" />
     <Content Include="imgs\imgs\books.png" />
-    <Content Include="imgs\imgs\books1.png" />
+    <Content Include="book_inventory\books1.png" />
     <Content Include="imgs\imgs\defaulters-list.png" />
     <Content Include="imgs\imgs\digital-data.png" />
     <Content Include="imgs\imgs\digital-inventory.png" />
@@ -2341,7 +2341,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="imgs\books\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
