@@ -12,7 +12,17 @@
                 reader.readAsDataURL(input.files[0]);
             }
         }
-        </script>
+
+        $(document).ready(function () {
+
+            //$(document).ready(function () {
+            //$('.table').DataTable();
+            // });
+
+            $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+            //$('.table1').DataTable();
+        });
+    </script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -220,9 +230,13 @@
                      </div>
                   </div>
                   <div class="row">
+                      <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elibraryDBConnectionStringBookInv %>" SelectCommand="SELECT * FROM [book_master_tbl]"></asp:SqlDataSource>
                      <div class="col">
-                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elibraryDBConnectionStringBookInv %>" ProviderName="<%$ ConnectionStrings:elibraryDBConnectionStringBookInv.ProviderName %>" SelectCommand="SELECT * FROM [admin_login_tbl]"></asp:SqlDataSource>
-                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="book_id" DataSourceID="SqlDataSource1">
+                            <Columns>
+                                <asp:BoundField DataField="book_id" HeaderText="book_id" ReadOnly="True" SortExpression="book_id" />
+                            </Columns>
+                         </asp:GridView>
                      </div>
                   </div>
                </div>
