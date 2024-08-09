@@ -230,11 +230,26 @@
                      </div>
                   </div>
                   <div class="row">
-                      <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elibraryDBConnectionStringBookInv %>" SelectCommand="SELECT * FROM [book_master_tbl]"></asp:SqlDataSource>
+                      <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elibraryDBConnectionString4 %>" SelectCommand="SELECT * FROM [book_master_tbl]" ProviderName="<%$ ConnectionStrings:elibraryDBConnectionString4.ProviderName %>"></asp:SqlDataSource>
                      <div class="col">
                         <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="book_id" DataSourceID="SqlDataSource1">
                             <Columns>
                                 <asp:BoundField DataField="book_id" HeaderText="book_id" ReadOnly="True" SortExpression="book_id" />
+                                <asp:TemplateField>
+                                    <ItemTemplate>
+                                        <div class ="container-fluid">
+                                            <div class ="row">
+                                                <div class ="col-lg-10">
+                                                </div>
+
+                                                <div class ="col-lg-2">
+                                                    <asp:Image class="img-fluid" ID="Image1" runat="server" ImageUrl='<%# Eval("book_img_link") %>' />
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
                             </Columns>
                          </asp:GridView>
                      </div>
