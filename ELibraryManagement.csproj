@@ -2190,6 +2190,7 @@
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="adminmembermanagement.aspx" />
+    <Content Include="viewbooks.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="adminauthormanagement.aspx.cs">
@@ -2276,6 +2277,13 @@
     </Compile>
     <Compile Include="adminmembermanagement.aspx.designer.cs">
       <DependentUpon>adminmembermanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewbooks.aspx.cs">
+      <DependentUpon>viewbooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewbooks.aspx.designer.cs">
+      <DependentUpon>viewbooks.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
