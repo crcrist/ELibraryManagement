@@ -1,5 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="userprofile.aspx.cs" Inherits="ELibraryManagement.userprofile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+            <script type="text/javascript">
+        $(document).ready(function () {
+
+            //$(document).ready(function () {
+            //$('.table').DataTable();
+            // });
+
+            $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+            //$('.table1').DataTable();
+        });
+            </script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div class="container-fluid">
@@ -213,7 +225,7 @@
                                 <div class="d-grid gap-2">
                                     <asp:Button class="btn btn-primary btn-block btn-lg"
                                         ID="Button1" 
-                                        runat="server" Text="Update"/>
+                                        runat="server" Text="Update" OnClick="Button1_Click"/>
                                 </div>
                                </center>
 
@@ -236,7 +248,7 @@
         <div class="row">
             <div class="col">
                 <center>
-                    <img width="150px" src="imgs/imgs/books1.png" />
+                    <img width="150px" src="imgs/imgs/books.png" />
                 </center>
             </div>
         </div>
@@ -261,7 +273,7 @@
                 <div class="row">
             <div class="col">
                 <asp:GridView class="table table-striped table-bordered"
-                    ID="GridView1" runat="server"></asp:GridView>
+                    ID="GridView1" runat="server" OnRowDataBound="GridView1_RowDataBound"></asp:GridView>
             </div>
         </div>
 

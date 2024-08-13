@@ -134,5 +134,10 @@ namespace ELibraryManagement
             LinkButton9.Visible = false; // book issing link button
             LinkButton10.Visible = false; // member management link button
         }
+
+        protected void LinkButton7_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("userprofile.aspx");
+        }
     }
 }
