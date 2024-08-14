@@ -23,10 +23,8 @@
                             <img width="150px" src="imgs/imgs/digital-inventory.png"/>
                             <h4>Digital Book Inventory</h4>
                             <p class="text-justify">
-                                Dummy text aslkjdsaldk jasdlk jasldk jasldk jasldk jaslkd jawsd
-                                aslkdj aslkdj 
-                                 aslkdjalskjd lksajd 
-                                 sajldkasdjaslkdj laskdj lkasjd lkasjd lkjasd lkjasdjl kasldkj asjld 
+                                Manage your entire book collection digitally. Easily add, categorize, 
+                                and track books in your library with just a few clicks.
                             </p>
                         </center>
                  </div>
@@ -36,10 +34,8 @@
                             <img width="150px" src="imgs/imgs/search-online.png"/>
                             <h4>Digital Book Inventory</h4>
                             <p class="text-justify">
-                                Dummy text aslkjdsaldk jasdlk jasldk jasldk jasldk jaslkd jawsd
-                                aslkdj aslkdj 
-                                    aslkdjalskjd lksajd 
-                                    sajldkasdjaslkdj laskdj lkasjd lkasjd lkjasd lkjasdjl kasldkj asjld 
+                                Provide users with seamless online access to your library's collection. 
+                                Browse, reserve, or borrow books directly through the web portal.
                             </p>
                         </center>
                     </div>
@@ -49,10 +45,8 @@
                             <img width="150px" src="imgs/imgs/defaulters-list.png"/>
                             <h4>Digital Book Inventory</h4>
                             <p class="text-justify">
-                                    Dummy text aslkjdsaldk jasdlk jasldk jasldk jasldk jaslkd jawsd
-                                    aslkdj aslkdj 
-                                     aslkdjalskjd lksajd 
-                                     sajldkasdjaslkdj laskdj lkasjd lkasjd lkjasd lkjasdjl kasldkj asjld 
+                                    Keep your users informed with real-time notifications. 
+                                Whether it's a due date reminder or a new book arrival, users will never miss an update.
                             </p>
                         </center>
                     </div>
@@ -82,10 +76,8 @@
                         <img width="150px" src="imgs/imgs/sign-up.png"/>
                         <h4>Sign Up</h4>
                         <p class="text-justify">
-                            Dummy text aslkjdsaldk jasdlk jasldk jasldk jasldk jaslkd jawsd
-                            aslkdj aslkdj 
-                             aslkdjalskjd lksajd 
-                             sajldkasdjaslkdj laskdj lkasjd lkasjd lkjasd lkjasdjl kasldkj asjld 
+                            Register quickly and start exploring our vast collection of books. 
+                            Get personalized recommendations and save your favorite titles.
                         </p>
                     </center>
              </div>
@@ -95,10 +87,8 @@
                         <img width="150px" src="imgs/imgs/search-online.png"/>
                         <h4>Search Books</h4>
                         <p class="text-justify">
-                            Dummy text aslkjdsaldk jasdlk jasldk jasldk jasldk jaslkd jawsd
-                            aslkdj aslkdj 
-                                aslkdjalskjd lksajd 
-                                sajldkasdjaslkdj laskdj lkasjd lkasjd lkjasd lkjasdjl kasldkj asjld 
+                            Find books in your library easily using our advanced search tools. 
+                            Filter by title, author, genre, and more to locate the perfect read. 
                         </p>
                     </center>
                 </div>
@@ -108,10 +98,8 @@
                         <img width="150px" src="imgs/imgs/library.png"/>
                         <h4>Visit Us</h4>
                         <p class="text-justify">
-                                Dummy text aslkjdsaldk jasdlk jasldk jasldk jasldk jaslkd jawsd
-                                aslkdj aslkdj 
-                                 aslkdjalskjd lksajd 
-                                 sajldkasdjaslkdj laskdj lkasjd lkasjd lkjasd lkjasdjl kasldkj asjld 
+                                Visit our physical library to enjoy an immersive reading experience. 
+                            Our friendly staff is here to help you find what you're looking for.
                         </p>
                     </center>
                 </div>

@@ -212,8 +212,7 @@
                                  <label>New Password</label>
                              <div class="form-group">
                                  <asp:TextBox class="form-control" ID="TextBox10"
-                                     runat="server" placeholder="New Password"
-                                     ReadOnly="true"></asp:TextBox>
+                                     runat="server" placeholder="New Password"></asp:TextBox>
                              </div>
         
                             </div>
