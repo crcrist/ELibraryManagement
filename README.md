@@ -4,9 +4,11 @@ To gain a deeper understanding of how ASP apps work and how to build them. This 
 ***
 ## Table of Contents
 - [Home Page](#home-page)
-* User Pages
-* Admin Pages
-* Additional Features
+- User Pages
+- Admin Pages
+- Additional Features
 ***
 ## Home Page 
 ![image](https://github.com/user-attachments/assets/2b3e9ac1-7bf4-4f6a-906c-62d1604a5389)
+
+- When the application is opened the user will begin at the homepage. From here the user can enter the "View Books" page without logging in to see the current inventory of books.
