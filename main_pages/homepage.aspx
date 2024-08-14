@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <section>
-        <img src="imgs/imgs/home-bg.jpg" class="img-fluid"/>
+        <img src="../imgs/imgs/home-bg.jpg" class="img-fluid"/>
      </section>
      <section>
          <div class="container">
@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <center>
-                            <img width="150px" src="imgs/imgs/digital-inventory.png"/>
+                            <img width="150px" src="../imgs/imgs/digital-inventory.png"/>
                             <h4>Digital Book Inventory</h4>
                             <p class="text-justify">
                                 Manage your entire book collection digitally. Easily add, categorize, 
@@ -31,7 +31,7 @@
 
                     <div class="col-md-4">
                         <center>
-                            <img width="150px" src="imgs/imgs/search-online.png"/>
+                            <img width="150px" src="../imgs/imgs/search-online.png"/>
                             <h4>Digital Book Inventory</h4>
                             <p class="text-justify">
                                 Provide users with seamless online access to your library's collection. 
@@ -42,7 +42,7 @@
 
                     <div class="col-md-4">
                         <center>
-                            <img width="150px" src="imgs/imgs/defaulters-list.png"/>
+                            <img width="150px" src="../imgs/imgs/defaulters-list.png"/>
                             <h4>Digital Book Inventory</h4>
                             <p class="text-justify">
                                     Keep your users informed with real-time notifications. 
@@ -56,7 +56,7 @@
 
 
         <section>
-        <img src="imgs/imgs/in-homepage-banner.jpg" class="img-fluid"/>
+        <img src="../imgs/imgs/in-homepage-banner.jpg" class="img-fluid"/>
      </section>
 
      <section>
@@ -73,7 +73,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <center>
-                        <img width="150px" src="imgs/imgs/sign-up.png"/>
+                        <img width="150px" src="../imgs/imgs/sign-up.png"/>
                         <h4>Sign Up</h4>
                         <p class="text-justify">
                             Register quickly and start exploring our vast collection of books. 
@@ -84,7 +84,7 @@
 
                 <div class="col-md-4">
                     <center>
-                        <img width="150px" src="imgs/imgs/search-online.png"/>
+                        <img width="150px" src="../imgs/imgs/search-online.png"/>
                         <h4>Search Books</h4>
                         <p class="text-justify">
                             Find books in your library easily using our advanced search tools. 
@@ -95,7 +95,7 @@
 
                 <div class="col-md-4">
                     <center>
-                        <img width="150px" src="imgs/imgs/library.png"/>
+                        <img width="150px" src="../imgs/imgs/library.png"/>
                         <h4>Visit Us</h4>
                         <p class="text-justify">
                                 Visit our physical library to enjoy an immersive reading experience. 
