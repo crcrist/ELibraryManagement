@@ -268,9 +268,9 @@ namespace ELibraryManagement
                 da = new SqlDataAdapter(cmd);
                 dt = new DataTable();
                 da.Fill(dt);
-                DropDownList3.DataSource = dt;
-                DropDownList3.DataValueField = "publisher_name";
-                DropDownList3.DataBind();
+                DropDownList2.DataSource = dt;
+                DropDownList2.DataValueField = "publisher_name";
+                DropDownList2.DataBind();
 
 
 
