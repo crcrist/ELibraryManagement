@@ -8,7 +8,7 @@
             // });
 
             $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
-            //$('.table1').DataTable();
+            //$('.table1').DataTable(); badge rounded-pill text-bg-info
         });
             </script>
 
@@ -202,7 +202,7 @@
                                  <label>Old Password</label>
                              <div class="form-group">
                                  <asp:TextBox class="form-control" ID="TextBox9"
-                                     runat="server" placeholder="Password" TextMode = "Password"
+                                     runat="server" placeholder="Old Password" TextMode = "Password"
                                      ReadOnly="true"></asp:TextBox>
                              </div>
         
@@ -212,7 +212,7 @@
                                  <label>New Password</label>
                              <div class="form-group">
                                  <asp:TextBox class="form-control" ID="TextBox10"
-                                     runat="server" placeholder="Password" TextMode = "Password"
+                                     runat="server" placeholder="New Password"
                                      ReadOnly="true"></asp:TextBox>
                              </div>
         
